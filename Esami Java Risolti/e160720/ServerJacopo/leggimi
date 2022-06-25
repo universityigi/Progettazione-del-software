@@ -1,0 +1,63 @@
+it
+
+PORTA: 7542 		(dovrebbe funzionare anche su altre porte)
+ADRESS: 0.0.0.0
+
+i 3 file di testo devo stare nella stessa cartella dell'applicazione DEL SERVER,
+inoltre i file che legge sono si trovano nel seguente path:
+
+/home/studente/NetBeansProjects/prove/server-client/esame 7 16 2020/
+
+Prima di far startare il server, il path va modificarlo opportunamente
+andando sulla classe server, riga 51 ( folder = new FIle("...") )
+e modificando anche le stringhe nelle righe 79, 85, 91, ricordandosi di aggiungere il nome del file alla fine del path.
+
+/home/studente/NetBeansProjects/prove/server-client/esame 7 16 2020/divinaCommedia
+
+NOTA: il client, come JPanel centrale, ha un JTextArea anzichè una JScrollPane,
+inoltre il comando LIST non funziona bene perchè il Thread non smette di lavorare 
+ma si può continuare a chiedere dei nuovi testi anche se viene lanciata un'eccezione.
+Nel server il tasto interrupt dovrebbe funzionare correttamente e per diminuire 
+la velocità con cui il server manda le stringhe è sufficiente andare sul Sender
+ed aumentare lo sleep a 1000-2000
+
+NOTA2: il server accetta solamente 4 stringhe:
+
+GET:canto1
+GET:promessiSposi
+GET:divinaCommadia
+INTERRUPT
+
+per tutte le altre scrive, il server invierà "file not found" e sul suo terminale verrà stamapato "command not found".
+
+en
+PORT: 7542	(shoud work well in other port too)
+ADRESS: 0.0.0.0
+
+the 3 text files must be in the same folder of server application,
+also the files it reads are located in the following path:
+
+/home/studente/NetBeansProjects/prove/server-client/esame 7 16 2020/
+
+Before starting the server, the path must be modified rightly
+going to the server class, line 51 (folder = new FIle ("..."))
+and also modifying the strings in lines 79, 85, 91, remembering to add the file name at the end of the path.
+
+/home/studente/NetBeansProjects/prove/server-client/esame 7 16 2020/divinaCommedia
+
+NOTE: the client, as central JPanel, has a JTextArea instead of a JScrollPane,
+also the LIST command does not work well because the Thread does not stop working
+but you can continue to ask for new texts even if an exception is thrown.
+In the server the interrupt key should work correctly and to decrease
+the speed with which the server sends the strings is enough to go to the Sender
+and increase the sleep to 1000-2000
+
+NOTE2: the server accepts only 4 strings:
+
+GET:canto1
+GET:promessiSposi
+GET:divinaCommedia
+INTERRUPT
+
+for all other writes, the server will send "file not found" and "command not found" will be printed on its terminal.
+

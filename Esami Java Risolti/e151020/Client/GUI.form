@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="e151020.Client.GUI">
+  <grid id="27dc6" binding="rootPane" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="806" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="e93bb" binding="upperPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="57a6e" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="Sever Address"/>
+            </properties>
+          </component>
+          <component id="12ca0" class="javax.swing.JTextField" binding="ipField">
+            <constraints/>
+            <properties>
+              <text value="127.0.0.1"/>
+            </properties>
+          </component>
+          <component id="14ca3" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="Port"/>
+            </properties>
+          </component>
+          <component id="607d9" class="javax.swing.JTextField" binding="portField">
+            <constraints/>
+            <properties>
+              <text value="4400"/>
+            </properties>
+          </component>
+          <component id="5a284" class="javax.swing.JButton" binding="connectButton">
+            <constraints/>
+            <properties>
+              <text value="Connect"/>
+            </properties>
+          </component>
+          <component id="103f7" class="javax.swing.JButton" binding="disconnectButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Disconnect"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="236" binding="middlePanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none" title="Image"/>
+        <children>
+          <scrollpane id="fe1d2">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="79e13" class="javax.swing.JTextArea" binding="display">
+                <constraints/>
+                <properties>
+                  <columns value="40"/>
+                  <editable value="false"/>
+                  <requestFocusEnabled value="false"/>
+                  <rows value="20"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="12f84" binding="lowerPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="a6748" class="javax.swing.JButton" binding="requestButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Request"/>
+            </properties>
+          </component>
+          <component id="aa192" class="javax.swing.JComboBox" binding="selectionBox">
+            <constraints/>
+            <properties>
+              <autoscrolls value="false"/>
+              <model>
+                <item value="image1"/>
+                <item value="image2"/>
+                <item value="image3"/>
+                <item value="image4"/>
+                <item value="image5"/>
+                <item value="image6"/>
+                <item value="BlaBlaGiveMeError"/>
+              </model>
+            </properties>
+          </component>
+          <component id="ee8bb" class="javax.swing.JButton" binding="stopButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Stop"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

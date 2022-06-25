@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="e120919.Client.GUI">
+  <grid id="27dc6" binding="rootPane" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="808" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="8c31a" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="d8f9a" class="javax.swing.JButton" binding="startButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Start"/>
+            </properties>
+          </component>
+          <component id="232a4" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="IP Address"/>
+            </properties>
+          </component>
+          <component id="4264e" class="javax.swing.JTextField" binding="ipField">
+            <constraints/>
+            <properties>
+              <text value="127.0.0.1"/>
+            </properties>
+          </component>
+          <component id="79d30" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="Port"/>
+            </properties>
+          </component>
+          <component id="5e733" class="javax.swing.JTextField" binding="portField">
+            <constraints/>
+            <properties>
+              <text value="4400"/>
+            </properties>
+          </component>
+          <component id="bab59" class="javax.swing.JButton" binding="stopButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Stop"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="8f79a" binding="centerGrid" custom-create="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="c50b6" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="df32c" class="javax.swing.JButton" binding="connectButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Connect"/>
+            </properties>
+          </component>
+          <component id="8c8f2" class="javax.swing.JButton" binding="disconnectButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Disconnect"/>
+            </properties>
+          </component>
+          <component id="9c2e5" class="javax.swing.JButton" binding="clearButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Clear"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="e100920.Client.GUI">
+  <grid id="27dc6" binding="rootPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="828" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="d34b9" binding="upperPart" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="5fb1b" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="Server Address"/>
+            </properties>
+          </component>
+          <component id="e44a7" class="javax.swing.JTextField" binding="ipField">
+            <constraints/>
+            <properties>
+              <text value="127.0.0.1"/>
+            </properties>
+          </component>
+          <component id="c1f46" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="Port"/>
+            </properties>
+          </component>
+          <component id="7b54b" class="javax.swing.JTextField" binding="portField">
+            <constraints/>
+            <properties>
+              <text value="4400"/>
+            </properties>
+          </component>
+          <component id="6e5fd" class="javax.swing.JButton" binding="connectButton">
+            <constraints/>
+            <properties>
+              <text value="Connect"/>
+            </properties>
+          </component>
+          <component id="59804" class="javax.swing.JButton" binding="disconnectButton">
+            <constraints/>
+            <properties>
+              <text value="Disconnect"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="662de" binding="bottomPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="1108b" class="javax.swing.JButton" binding="startButton">
+            <constraints/>
+            <properties>
+              <text value="Start"/>
+            </properties>
+          </component>
+          <component id="54ba3" class="javax.swing.JButton" binding="stopButton">
+            <constraints/>
+            <properties>
+              <text value="Stop"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="f726" binding="sideBar" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="East"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="a8e66">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="1e48a" class="javax.swing.JTextArea" binding="logArea">
+                <constraints/>
+                <properties>
+                  <columns value="15"/>
+                  <editable value="false"/>
+                  <rows value="10"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="e3344" binding="centerGrid" custom-create="true" layout-manager="GridBagLayout">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+    </children>
+  </grid>
+</form>
